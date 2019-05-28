@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "/src/app.js"
+    "test": "echo \"Error: no test specified\""
   },
   "author": "Sayan",
   "license": "ISC",

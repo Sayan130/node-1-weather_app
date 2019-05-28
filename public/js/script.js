@@ -4,7 +4,7 @@ const search = document.querySelector("input")
 const error = document.querySelector("#error");
 
 let api = function(location){
-fetch('http://localhost:3000/search?adress='+location).then((Response)=>{
+fetch('/search?adress='+location).then((Response)=>{
 
     Response.json().then((data)=>{
             if(data.err != undefined){

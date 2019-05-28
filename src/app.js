@@ -7,7 +7,7 @@ const get_data = require("./weather-app/ap")
 const staticcontent = path.join(__dirname, "/../public")
 const viewpath = path.join(__dirname,"/../templates/partials/Views");
 const partialpath = path.join(__dirname, "/../templates/partials")
-
+const port = process.env.PORT || 3000;
 
 console.log(staticcontent);
 
@@ -75,6 +75,6 @@ app.get("*",(req, res)=>{
 })
 
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log("Inside app.listen");
 })

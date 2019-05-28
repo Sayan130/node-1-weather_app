@@ -9,7 +9,7 @@ const viewpath = path.join(__dirname,"/../templates/partials/Views");
 const partialpath = path.join(__dirname, "/../templates/partials")
 const port = process.env.PORT || 3000;
 
-console.log(staticcontent);
+
 
 hbs.registerPartials(partialpath);
 app.set("view engine", "hbs");

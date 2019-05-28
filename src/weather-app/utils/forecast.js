@@ -1,4 +1,3 @@
-
 const request = require('request');
 
 function weather(value, callback){

@@ -1,0 +1,29 @@
+body{
+
+    font-family: Arial;
+    max-width: 600px;
+    padding: 16px;
+    margin: 0 auto;
+
+
+}
+
+header{
+    margin-bottom: 60px;
+}
+a {
+    color: #666666;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+footer{
+    border-top: 1px solid #666666;
+    color : #666666;
+    margin-top: 50px;
+    max-width: 600px;
+}
+
+img{
+    max-width: 600px;
+}

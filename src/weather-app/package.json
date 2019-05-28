@@ -1,0 +1,16 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "main": "ap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sayan",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.19.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

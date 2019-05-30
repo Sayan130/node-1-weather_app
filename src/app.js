@@ -31,16 +31,16 @@ app.get("/search", (req, res)=>{
         return res.send({title : "Weather", name :"Sayan Sarkar", result:"Empty string cannot be passed"});
     }
     else{
-    //    console.log(req.query.adress);
+    
         get_data.weather_api(req.query.adress,(json)=>{
 
             if(json.error != undefined){
                                 
-                return   res.send({title : "Weather", name :"Sayan Sarkar", result:`${json.temp +" "+json.sum}`});
+                return   res.send({title : "Weather", name :"Sayan Sarkar", result:undefined, err : json.err});
             }
             else {
-      
-                return res.send({title : "Weather", name :"Sayan Sarkar", result:`${json.temp +" "+json.sum}`, err : json.err});
+                console.log(json);
+                return res.send({title : "Weather", name :"Sayan Sarkar", result:`${json.temp +" "+json.sum}`, daily : " Daily summery ->"+`${json.daily}`});
             }
         })
     }

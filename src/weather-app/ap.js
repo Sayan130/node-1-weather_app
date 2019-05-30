@@ -16,11 +16,13 @@ geocode.geolocation(place, (error, dat)=>{
         if(err == undefined){
             let temp = response.currently.temperature;
             let sum = response.currently.summary;
-            callback({temp : temp, sum:sum, err:undefined});
+            let daily = response.daily.summary;
+
+            callback({temp : temp, sum:sum,daily : daily, err:undefined});
         }
        else
             
-            callback({temp : undefined, sum:undefined, err:"Unable to get any location"});
+            callback({temp : undefined, sum:undefined, daily : undefined, err:"Unable to get any location"});
         
 })
     } 
